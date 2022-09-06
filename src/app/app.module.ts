@@ -7,6 +7,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { WheelOfFortuneComponent } from './wheel-of-fortune/wheel-of-fortune.component';
 import { QuestionComponent } from './question/question.component';
 import { AnswerComponent } from './answer/answer.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AnswerComponent } from './answer/answer.component';
     WelcomeComponent,
     WheelOfFortuneComponent,
     QuestionComponent,
-    AnswerComponent
+    AnswerComponent,
+    QuizComponent
   ],
   imports: [
     BrowserModule,

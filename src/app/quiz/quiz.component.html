@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="card mb-3">
+    <div class="card-body text-center">
+      <p class="card-text">
+        Tag {{day}}
+      </p>
+    </div>
+  </div>
+</div>
+
+<app-question [question_id]="day" (correctAnswerEvent)="log($event)" ></app-question>

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, OnChanges } from '@angular/core';
 
 import { Question } from '../question';
 import { Answer } from '../answer';
@@ -11,6 +11,8 @@ import { QuestionService } from '../question.service';
   styleUrls: ['./question.component.scss']
 })
 export class QuestionComponent implements OnInit {
+
+  @Output() correctAnswerEvent = new EventEmitter<string>();
 
   @Input() question_id: number = 1;
 
@@ -27,9 +29,24 @@ export class QuestionComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.question = this.questionService.getQuestions(1)[0];
-    console.log(this.questionService.getQuestions(1)[0]);
-    this.answers = this.answerService.getAnswers(1);
+    this.setQuestionAndAnswers();
+  }
+
+  setQuestionAndAnswers(){
+    console.log(this.question_id);
+    this.question = this.questionService.getQuestions(this.question_id)[0];
+    this.answers = this.answerService.getAnswers(this.question.id);
+  }
+
+  ngOnChanges() {
+    this.setQuestionAndAnswers();
+  }
+
+
+  checkIfAnswerIsCorrect(answer: Answer){
+    if(answer.correct_answer === "true"){
+      this.correctAnswerEvent.emit("true");
+    }
   }
 
   log(answer: Answer) {

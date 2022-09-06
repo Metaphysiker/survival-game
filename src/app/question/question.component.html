@@ -8,7 +8,7 @@
   </div>
 
   <div *ngFor="let answer of answers;">
-    <app-answer [answer]="answer" (answerEvent)="log($event)"></app-answer>
+    <app-answer [answer]="answer" (answerEvent)="checkIfAnswerIsCorrect($event)"></app-answer>
   </div>
 
 

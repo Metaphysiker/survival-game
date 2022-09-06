@@ -6,10 +6,26 @@ import { Question } from './question';
 })
 export class QuestionService {
 
-  questions: any[] = [
+  questions: Question[] = [
     {
       id: 1,
-      text: "Dein Körper braucht Proteine zum Überleben. Was wirst du tun?"
+      text: "Dein Körper braucht Protein. Was wirst du tun?"
+    },
+    {
+      id: 2,
+      text: "Dein Körper braucht Vitamin B12. Was wirst du tun?"
+    },
+    {
+      id: 3,
+      text: "Dein Körper braucht Kalzium. Was wirst du tun?"
+    },
+    {
+      id: 4,
+      text: "Dein Körper braucht Eisen. Was wirst du tun?"
+    },
+    {
+      id: 5,
+      text: "Dein Körper braucht Kalzium. Was wirst du tun?"
     }
   ];
 

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 import { Answer } from '../answer';
 
@@ -9,6 +9,8 @@ import { Answer } from '../answer';
 })
 export class AnswerComponent implements OnInit {
 
+  @Output() answerEvent = new EventEmitter<Answer>();
+
   @Input() answer: Answer = {
     question_id: 0,
     text: "That",
@@ -18,6 +20,10 @@ export class AnswerComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  clickOnAnswer() {
+    this.answerEvent.emit(this.answer);
   }
 
 }

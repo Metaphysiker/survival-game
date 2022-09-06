@@ -2,13 +2,13 @@
   <div class="card mb-3">
     <div class="card-body text-center">
       <p class="card-text">
-          {{question.text}}    
+          {{question.text}}
       </p>
     </div>
   </div>
 
   <div *ngFor="let answer of answers;">
-    <app-answer [answer]="answer"></app-answer>
+    <app-answer [answer]="answer" (answerEvent)="log($event)"></app-answer>
   </div>
 
 

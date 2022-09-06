@@ -32,4 +32,8 @@ export class QuestionComponent implements OnInit {
     this.answers = this.answerService.getAnswers(1);
   }
 
+  log(answer: Answer) {
+    console.log(answer);
+  }
+
 }

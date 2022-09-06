@@ -1,4 +1,16 @@
 <div class="container">
-  <p>question works!</p>
+  <div class="card mb-3">
+    <div class="card-body text-center">
+      <p class="card-text">
+          {{question.text}}    
+      </p>
+    </div>
+  </div>
+
+  <div *ngFor="let answer of answers;">
+    <app-answer [answer]="answer"></app-answer>
+  </div>
+
+
 
 </div>

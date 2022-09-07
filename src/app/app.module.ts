@@ -8,6 +8,7 @@ import { WheelOfFortuneComponent } from './wheel-of-fortune/wheel-of-fortune.com
 import { QuestionComponent } from './question/question.component';
 import { AnswerComponent } from './answer/answer.component';
 import { QuizComponent } from './quiz/quiz.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { QuizComponent } from './quiz/quiz.component';
     WheelOfFortuneComponent,
     QuestionComponent,
     AnswerComponent,
-    QuizComponent
+    QuizComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

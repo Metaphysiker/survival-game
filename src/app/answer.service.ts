@@ -29,17 +29,17 @@ export class AnswerService {
     },
     {
       question_id: 2,
-      text: "Ich kaufe entweder Produkte, die mit Vitamin B12 angereichert wurden, oder Vitamin-B12-Ergänzungsnahrung.",
+      text: "Ich kaufe entweder Produkte, die mit Vitamin B12 angereichert sind, oder Vitamin-B12-Ergänzungsnahrung.",
       correct_answer: "true"
     },
     {
       question_id: 2,
-      text: "Ich lege mich auf den Boden und sterbe, weil Chemikalien schlecht sind, ausser Antibiotika.",
+      text: "Ich lege mich auf den Boden und sterbe, weil Chemikalien schlecht sind, ausser vielleicht Antibiotika.",
       correct_answer: "false"
     },
     {
       question_id: 3,
-      text: "Ich lege mich auf den Boden und sterbe, weil staatlich subventionierte Bauern sonst ihren Job verlieren, wenn ich keine Muttermilch mehr kaufe.",
+      text: "Ich lege mich auf den Boden und sterbe, weil Bauern sonst ihren Job verlieren und vegane Produkte auf magische Weise keine neuen Jobs generieren.",
       correct_answer: "false"
     },
     {
@@ -49,6 +49,21 @@ export class AnswerService {
     },
     {
       question_id: 3,
+      text: "Ich lege mich auf dem Boden und sterbe, weil mit Kalzium angereicherte Drinks unnatürlich sind.",
+      correct_answer: "false"
+    },
+    {
+      question_id: 4,
+      text: "Ich lege mich auf den Boden und sterbe, weil Menschen ganz scharfe Eckzähne haben, wie Löwen.",
+      correct_answer: "false"
+    },
+    {
+      question_id: 4,
+      text: "Ich kaufe eisenhaltige Lebensmittel, wie Sojabohnen, Samen, Nüsse, Tofu, dunkle Schokolade, Spinat, Kohlgemüse und Vollkornprodukte.",
+      correct_answer: "true"
+    },
+    {
+      question_id: 4,
       text: "Ich lege mich auf dem Boden und sterbe, weil mit Kalzium angereicherte Drinks unnatürlich sind.",
       correct_answer: "false"
     }
